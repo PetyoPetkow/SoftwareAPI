@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Database.deps.json
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Database.dll
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\ref\SoftwareAPI.Database.dll
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Database.pdb
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Database.Models.dll
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Database.Models.pdb
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.AssemblyInfo.cs
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.csproj.CopyComplete
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.dll
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\ref\SoftwareAPI.Database.dll
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.pdb

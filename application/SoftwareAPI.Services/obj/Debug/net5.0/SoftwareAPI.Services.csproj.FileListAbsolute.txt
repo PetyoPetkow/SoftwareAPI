@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Services.deps.json
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Services.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\ref\SoftwareAPI.Services.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Services.pdb
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Database.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Database.Models.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Database.Models.pdb
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Database.pdb
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.AssemblyInfo.cs
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.csproj.CopyComplete
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\ref\SoftwareAPI.Services.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.pdb

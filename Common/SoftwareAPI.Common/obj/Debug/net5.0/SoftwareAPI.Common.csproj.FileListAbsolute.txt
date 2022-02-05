@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\bin\Debug\net5.0\SoftwareAPI.Common.deps.json
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\bin\Debug\net5.0\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\bin\Debug\net5.0\ref\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\bin\Debug\net5.0\SoftwareAPI.Common.pdb
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\SoftwareAPI.Common.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\SoftwareAPI.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\SoftwareAPI.Common.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\SoftwareAPI.Common.AssemblyInfo.cs
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\SoftwareAPI.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\ref\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\Common\SoftwareAPI.Common\obj\Debug\net5.0\SoftwareAPI.Common.pdb
