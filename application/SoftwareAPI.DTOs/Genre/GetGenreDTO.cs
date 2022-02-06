@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftwareAPI.DTOs.Genre
+﻿namespace SoftwareAPI.DTOs.Genre
 {
+    using System;
+
     public class GetGenreDTO
     {
         public Guid Id { get; set; }

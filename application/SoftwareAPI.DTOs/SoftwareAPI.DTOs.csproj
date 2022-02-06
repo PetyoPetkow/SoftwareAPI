@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Database\SoftwareAPI.Database.Models\SoftwareAPI.Database.Models.csproj" />
+  </ItemGroup>
+
 </Project>

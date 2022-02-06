@@ -1565,6 +1565,22 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "SoftwareAPI.Database.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11"
+        },
+        "compile": {
+          "bin/placeholder/SoftwareAPI.Database.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SoftwareAPI.Database.Models.dll": {}
+        }
       }
     }
   },
@@ -5894,6 +5910,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "SoftwareAPI.Database.Models/1.0.0": {
+      "type": "project",
+      "path": "../../Database/SoftwareAPI.Database.Models/SoftwareAPI.Database.Models.csproj",
+      "msbuildProject": "../../Database/SoftwareAPI.Database.Models/SoftwareAPI.Database.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5902,7 +5923,8 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.11",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.11"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.11",
+      "SoftwareAPI.Database.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5936,7 +5958,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\source\\repos\\SoftwareAPI\\Database\\SoftwareAPI.Database.Models\\SoftwareAPI.Database.Models.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\repos\\SoftwareAPI\\Database\\SoftwareAPI.Database.Models\\SoftwareAPI.Database.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
