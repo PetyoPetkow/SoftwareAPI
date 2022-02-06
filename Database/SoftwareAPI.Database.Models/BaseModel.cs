@@ -6,13 +6,13 @@
     {
         protected BaseModel()
         {
-            this.id = Guid.NewGuid();
+            this.Id = Guid.NewGuid();
             this.CreatedOn = DateTime.UtcNow;
             this.UpdatedOn = null;
 
         }
 
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
 
         public DateTime CreatedOn { get; set; }
 
