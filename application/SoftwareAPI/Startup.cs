@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,6 +14,7 @@ using SoftwareAPI.Services.Database.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace SoftwareAPI
@@ -38,7 +40,9 @@ namespace SoftwareAPI
 
             services.AddDbContext<SoftwareAPIDbContext>();
             services.AddScoped<IGameService, GameService>();
-            services.AddScoped<GameService>();
+            services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IGameGenreMappingService, GameGenreMappingService>();
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

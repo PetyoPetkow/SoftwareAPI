@@ -65,3 +65,10 @@ C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\SoftwareAPI.DTOs.dll
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\SoftwareAPI.DTOs.pdb
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\Humanizer.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

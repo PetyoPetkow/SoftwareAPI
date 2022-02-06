@@ -32,9 +32,23 @@
             return gameToReturn;
         }
 
-        public Task<bool> DeleteAsync(Guid id)
+        public async Task<bool> DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            Game gameToDelete = await this.GetByIdAsync<Game>(id);
+
+            if (gameToDelete == null)
+            {
+                throw new Exception();
+            }
+
+            gameToDelete.IsDeleted = true;
+            gameToDelete.DeletedOn = DateTime.UtcNow;
+
+            this.DbSet.Update(gameToDelete);
+            int resultFromDb = await this.DbContext.SaveChangesAsync();
+
+            bool result = resultFromDb != 0;
+            return result;
         }
 
         public async Task<T> GetAllAsync<T>()

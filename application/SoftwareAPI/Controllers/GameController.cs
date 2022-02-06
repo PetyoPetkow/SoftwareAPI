@@ -1,25 +1,80 @@
 ﻿namespace SoftwareAPI.Controllers
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Linq;
-	using System.Threading.Tasks;
+    using System;
+    using System.Threading.Tasks;
 
-	using SoftwareAPI.Database.Models.Software;
-	using SoftwareAPI.Services.Database;
-	
+    using Microsoft.AspNetCore.Mvc;
+    using SoftwareAPI.Services.Database.Interfaces;
+    using SoftwareAPI.DTOs.Game;
 
-	using Microsoft.AspNetCore.Mvc;
-
-	[ApiController]
+    [ApiController]
 	[Route("api/[controller]")]
 	public class GameController : ControllerBase
 	{
-		public GameController(GameService gameService)
+		public GameController(IGameService gameService)
 		{
 			this.GameService = gameService;
 		}
 
-		public GameService GameService { get; }
+		public IGameService GameService { get; }
+
+		[HttpGet]
+		public async Task<IActionResult> Get()
+		{
+			GetAllGamesDTO games = await this.GameService.GetAllAsync<GetAllGamesDTO>();
+
+			return this.Ok(games);
+		}
+
+		[HttpGet]
+		[Route("{id}")]
+		public async Task<IActionResult> Get(Guid id)
+		{
+			GetGameDTO game = await this.GameService.GetByIdAsync<GetGameDTO>(id);
+
+			if (game == null)
+			{
+				return this.NotFound();
+			}
+
+			return this.Ok(game);
+		}
+
+
+		[HttpPost]
+		public async Task<IActionResult> Post(PostGameDTO model)
+		{
+			GetGameDTO createdGame = await this.GameService.AddAsync<GetGameDTO>(model);
+
+			return this.CreatedAtRoute(this.RouteData, createdGame);
+		}
+
+		[HttpPut]
+		[Route("{id}")]
+		public async Task<IActionResult> Put(Guid id, PutGameDTO model)
+		{
+			bool resultFromUpdate = await this.GameService.UpdateAsync(id, model);
+
+			if (resultFromUpdate == false)
+			{
+				return this.BadRequest();
+			}
+
+			return this.NoContent();
+		}
+
+		[HttpDelete]
+		[Route("{id}")]
+		public async Task<IActionResult> Delete(Guid id)
+		{
+			bool resultFromDelete = await this.GameService.DeleteAsync(id);
+
+			if (resultFromDelete == false)
+			{
+				return this.BadRequest();
+			}
+
+			return this.NoContent();
+		}
 	}
 }

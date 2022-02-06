@@ -17,3 +17,6 @@ C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debu
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.pdb
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.DTOs.dll
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.DTOs.pdb
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Services.runtimeconfig.json
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Services.runtimeconfig.dev.json
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.genruntimeconfig.cache

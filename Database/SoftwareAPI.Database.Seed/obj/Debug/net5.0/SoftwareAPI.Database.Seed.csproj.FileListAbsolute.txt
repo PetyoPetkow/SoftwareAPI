@@ -10,3 +10,6 @@ C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Seed\obj\De
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Seed\obj\Debug\net5.0\SoftwareAPI.Database.Seed.dll
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Seed\obj\Debug\net5.0\ref\SoftwareAPI.Database.Seed.dll
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Seed\obj\Debug\net5.0\SoftwareAPI.Database.Seed.pdb
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Seed\bin\Debug\net5.0\SoftwareAPI.Database.Seed.runtimeconfig.json
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Seed\bin\Debug\net5.0\SoftwareAPI.Database.Seed.runtimeconfig.dev.json
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Seed\obj\Debug\net5.0\SoftwareAPI.Database.Seed.genruntimeconfig.cache
