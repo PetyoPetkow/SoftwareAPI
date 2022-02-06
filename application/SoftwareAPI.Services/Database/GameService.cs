@@ -82,14 +82,14 @@
             {
                 return false;
             }
-            Type modelType = game.GetType();
+            System.Type modelType = game.GetType();
             PropertyInfo[] properties = modelType.GetProperties();
             foreach (PropertyInfo propertyInfo in properties)
             {
                 var propertyValue = propertyInfo.GetValue(game);
                 if (propertyValue != null)
                 {
-                    Type bookToUpdateType = gameToUpdate.GetType();
+                    System.Type bookToUpdateType = gameToUpdate.GetType();
                     PropertyInfo propertyToUpdate = bookToUpdateType.GetProperty(propertyInfo.Name);
                     propertyToUpdate.SetValue(gameToUpdate, propertyValue);
                 }

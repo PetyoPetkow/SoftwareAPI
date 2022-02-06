@@ -1,21 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SoftwareAPI.Database.Models.Software;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftwareAPI.Database
+﻿namespace SoftwareAPI.Database
 {
-    public class SoftwareAPIDbContext : DbContext
+	using Microsoft.EntityFrameworkCore;
+	using SoftwareAPI.Database.Models.Software;
+	using System.Reflection;
+
+	public class SoftwareAPIDbContext : DbContext
     {
         public DbSet<Game> Games { get; set; }
 
         public DbSet<Genre> Genre { get; set; }
 
         public DbSet<GameGenreMapping> GamesGenresMapping { get; set; }
+
+		public DbSet<Type> Types { get; set; }
+
+		public DbSet<Utility> Utilities { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
