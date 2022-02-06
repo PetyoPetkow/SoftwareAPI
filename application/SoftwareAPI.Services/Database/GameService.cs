@@ -89,8 +89,8 @@
                 var propertyValue = propertyInfo.GetValue(game);
                 if (propertyValue != null)
                 {
-                    System.Type bookToUpdateType = gameToUpdate.GetType();
-                    PropertyInfo propertyToUpdate = bookToUpdateType.GetProperty(propertyInfo.Name);
+                    System.Type gameToUpdateType = gameToUpdate.GetType();
+                    PropertyInfo propertyToUpdate = gameToUpdateType.GetProperty(propertyInfo.Name);
                     propertyToUpdate.SetValue(gameToUpdate, propertyValue);
                 }
             }

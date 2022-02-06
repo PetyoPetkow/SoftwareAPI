@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SoftwareAPI.DTOs.Type
 {
-    public class GetAllTypes
+    public class GetAllTypesDTO
     {
         public int TypesCount { get; set; }
 

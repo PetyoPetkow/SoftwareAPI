@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftwareAPI.Services.Database.Interfaces
+﻿namespace SoftwareAPI.Services.Database.Interfaces
 {
+    using SoftwareAPI.DTOs.Utility;
+    using System;
+    using System.Threading.Tasks;
+
     public interface IUtilityService
     {
         Task<T> GetAllAsync<T>();

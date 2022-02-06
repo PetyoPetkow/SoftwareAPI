@@ -10,7 +10,7 @@
         public void Configure(EntityTypeBuilder<Utility> builder)
         {
             builder
-                .HasOne<Models.Software.Type>(s => s.Type)
+                .HasOne<SoftwareAPI.Database.Models.Software.Type>(s => s.Type)
                 .WithMany(t => t.Utilities)
                 .HasForeignKey(u => u.TypeId);
 
