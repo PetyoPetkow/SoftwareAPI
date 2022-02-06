@@ -21,13 +21,5 @@
 		}
 
 		public GameService GameService { get; }
-
-		[HttpPost]
-		public async Task<IActionResult> Post(Game game)
-		{
-			Game createdGame = await this.GameService.AddAsync(game);
-
-			return this.CreatedAtRoute(this.RouteData, game);
-		}
 	}
 }

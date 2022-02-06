@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using SoftwareAPI.Database;
 using SoftwareAPI.Services.Database;
+using SoftwareAPI.Services.Database.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,7 @@ namespace SoftwareAPI
             });
 
             services.AddDbContext<SoftwareAPIDbContext>();
-
+            services.AddScoped<IGameService, GameService>();
             services.AddScoped<GameService>();
         }
 

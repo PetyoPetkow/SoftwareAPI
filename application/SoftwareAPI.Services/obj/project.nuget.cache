@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FP0kmSo026p06Wz3Y1/CK/vQeb2oHb7znmPqmAKWwGSWXd5yMMx+hyk8D3lz5DG1wvTx04EgGHIgoMqejpB9jw==",
+  "dgSpecHash": "hRVYcgkZCEsvfLHepaKT3ZBr+UcRIVOVZVdOaM+M6GAtttRhNi0PZYXZuACZECKg6V4C8mQiU6N58UD6YZbCcg==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\SoftwareAPI\\application\\SoftwareAPI.Services\\SoftwareAPI.Services.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.11\\microsoft.entityframeworkcore.5.0.11.nupkg.sha512",
