@@ -1104,12 +1104,24 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "SoftwareAPI.Database.Models/1.0.0": {
+      "SoftwareAPI.Common/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11"
+        },
+        "runtime": {
+          "SoftwareAPI.Common.dll": {}
+        }
+      },
+      "SoftwareAPI.Database.Models/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
+          "SoftwareAPI.Common": "1.0.0"
         },
         "runtime": {
           "SoftwareAPI.Database.Models.dll": {}
@@ -1822,6 +1834,11 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "SoftwareAPI.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "SoftwareAPI.Database.Models/1.0.0": {
       "type": "project",

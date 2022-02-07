@@ -6,8 +6,9 @@
 	using Microsoft.AspNetCore.Mvc;
     using SoftwareAPI.Services.Database.Interfaces;
     using SoftwareAPI.DTOs.Game;
+    using SoftwareAPI.Database.Models.Software;
 
-	[Produces("application/json")]
+    [Produces("application/json")]
 	[ApiController]
 	[Route("api/[controller]")]
 	public class GameController : ControllerBase
@@ -79,9 +80,14 @@
 		[HttpPost]
 		public async Task<IActionResult> Post(PostGameDTO model)
 		{
-			GetGameDTO createdGame = await this.GameService.AddAsync<GetGameDTO>(model);
+			if (TryValidateModel(model)) 
+            {
+				GetGameDTO createdGame = await this.GameService.AddAsync<GetGameDTO>(model);
 
-			return this.CreatedAtRoute(this.RouteData, createdGame);
+				return this.CreatedAtRoute(this.RouteData, createdGame);
+			}
+			return this.BadRequest();
+			
 		}
 
         /// <summary>

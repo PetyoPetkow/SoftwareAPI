@@ -13,3 +13,6 @@ C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Models\obj\
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Models\bin\Debug\net5.0\SoftwareAPI.Database.Models.runtimeconfig.json
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Models\bin\Debug\net5.0\SoftwareAPI.Database.Models.runtimeconfig.dev.json
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Models\obj\Debug\net5.0\SoftwareAPI.Database.Models.genruntimeconfig.cache
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Models\bin\Debug\net5.0\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Models\bin\Debug\net5.0\SoftwareAPI.Common.pdb
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database.Models\obj\Debug\net5.0\SoftwareAPI.Database.Models.csproj.CopyComplete

@@ -16,3 +16,5 @@ C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\n
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Database.runtimeconfig.json
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Database.runtimeconfig.dev.json
 C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\obj\Debug\net5.0\SoftwareAPI.Database.genruntimeconfig.cache
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\Database\SoftwareAPI.Database\bin\Debug\net5.0\SoftwareAPI.Common.pdb

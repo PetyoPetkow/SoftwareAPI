@@ -16,3 +16,5 @@ C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\obj\Debug\ne
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.Database.Models.dll
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.Database.Models.pdb
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\obj\Debug\net5.0\SoftwareAPI.DTOs.csproj.CopyComplete
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.Common.pdb

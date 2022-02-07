@@ -5,6 +5,7 @@ namespace SoftwareAPI.DTOs.Genre
 {
     public class PutGenreDTO
     {
+        [Required]
         [MaxLength(ModelConstants.NAME_MAX_LENGTH)]
         public string Name { get; set; }
     }

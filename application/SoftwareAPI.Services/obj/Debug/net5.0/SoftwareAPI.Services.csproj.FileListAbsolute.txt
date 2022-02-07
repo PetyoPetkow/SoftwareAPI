@@ -20,3 +20,5 @@ C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debu
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Services.runtimeconfig.json
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Services.runtimeconfig.dev.json
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\obj\Debug\net5.0\SoftwareAPI.Services.genruntimeconfig.cache
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Common.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.Services\bin\Debug\net5.0\SoftwareAPI.Common.pdb
