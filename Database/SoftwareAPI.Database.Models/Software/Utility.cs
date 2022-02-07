@@ -27,7 +27,7 @@ namespace SoftwareAPI.Database.Models.Software
 
         public DateTime? DeletedOn { get; set; }
 
-        public Guid TypeId { get; set; }
+        public Guid? TypeId { get; set; }
         public Type Type { get; set; }
     }
 }

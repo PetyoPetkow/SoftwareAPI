@@ -56,6 +56,8 @@
             List<Utility> utilities = await this.DbSet
                 .OrderBy(u => u.Name)
                 .ThenBy(u => u.Publisher)
+                .Include(u=>u.Type)
+                .Where(u => u.IsDeleted == false)
                 .ToListAsync();
 
             T mappedUtilities = this.Mapper.Map<T>(utilities);
@@ -65,10 +67,13 @@
         public async Task<T> GetByIdAsync<T>(Guid id)
         {
             Utility utility = await this.DbSet
+                .Include(u=>u.Type)
                 .SingleOrDefaultAsync(u => u.Id == id);
 
-            T mappedUtility = this.Mapper.Map<T>(utility);
+           
 
+            T mappedUtility = this.Mapper.Map<T>(utility);
+            
             return mappedUtility;
         }
 

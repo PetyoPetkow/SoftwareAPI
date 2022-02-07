@@ -1,9 +1,7 @@
 ﻿namespace SoftwareAPI.DTOs.Game
 {
     using System;
-    using System.Collections.Generic;
 
-    using SoftwareAPI.Database.Models.Software;
     using SoftwareAPI.DTOs.Genre;
 
     public class GetGameDTO

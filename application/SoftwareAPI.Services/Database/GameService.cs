@@ -66,7 +66,7 @@
                 .ThenBy(g => g.Publisher)
                 .Include(g => g.Genres)
                 .ThenInclude(g=>g.Genre)
-                .Where(g => g.IsDeleted != false)
+                .Where(g => g.IsDeleted == false)
                 .ToListAsync();
 
             T mappedGames = this.Mapper.Map<T>(games);

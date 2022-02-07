@@ -1,4 +1,6 @@
-﻿namespace SoftwareAPI.DTOs.Utility
+﻿using System;
+
+namespace SoftwareAPI.DTOs.Utility
 {
     public class PatchUtilityDTO
     {
@@ -9,5 +11,7 @@
         public string Description { get; set; }
 
         public int Price { get; set; }
+
+        public Guid? TypeId { get; set; }
     }
 }

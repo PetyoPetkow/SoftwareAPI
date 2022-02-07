@@ -14,6 +14,8 @@
 
         public int Price { get; set; }
 
+        public string TypeName { get; set; }
+
         public bool IsDeleted { get; set; }
 
         public DateTime? DeletedOn { get; set; }

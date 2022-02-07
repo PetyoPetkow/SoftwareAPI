@@ -47,6 +47,18 @@
 			return this.CreatedAtRoute(this.RouteData, createdUtility);
 		}
 
+		[HttpPatch]
+		[Route("{id}")]
+		public async Task<IActionResult> Patch(Guid id, PatchUtilityDTO model)
+        {
+			bool resultFromPartialUpdate = await this.UtilityService.PartialUpdateAsync(id, model);
+			if (resultFromPartialUpdate == false)
+			{
+				return this.BadRequest();
+			}
+			return this.Ok();
+		}
+
 		[HttpPut]
 		[Route("{id}")]
 		public async Task<IActionResult> Put(Guid id, PutUtilityDTO model)

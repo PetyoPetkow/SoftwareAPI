@@ -21,6 +21,7 @@
         {
             IEnumerable<SoftwareAPI.Database.Models.Software.Type> types = await this.DbSet
                 .OrderBy(t => t.Name)
+                .Where(t => t.IsDeleted == false)
                 .ToListAsync();
             T result = this.Mapper.Map<T>(types);
             return result;

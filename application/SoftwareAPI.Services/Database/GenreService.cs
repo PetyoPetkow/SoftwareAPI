@@ -21,6 +21,7 @@
         {
             IEnumerable<Genre> genres = await this.DbSet
                 .OrderBy(g => g.Name)
+                .Where(g => g.IsDeleted == false)
                 .ToListAsync();
             T result = this.Mapper.Map<T>(genres);
             return result;
