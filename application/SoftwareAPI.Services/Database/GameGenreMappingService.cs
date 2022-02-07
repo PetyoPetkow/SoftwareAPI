@@ -26,11 +26,6 @@
 				.Include(ggm => ggm.Genre)
 				.SingleOrDefaultAsync();
 
-			if (gameGenreRelation == null)
-			{
-				throw new Exception();
-			}
-
 			var gameGenreRelationToReturn = this.Mapper.Map<T>(gameGenreRelation);
 			return gameGenreRelationToReturn;
 		}
@@ -49,6 +44,11 @@
 		public async Task<bool> DeleteAsync(Guid gameId, Guid genreId)
 		{
 			var gameGenreRelationToDelete = await this.GetByGameAndGenreIdAsync<GameGenreMapping>(gameId, genreId);
+
+            if (gameGenreRelationToDelete == null)
+            {
+				return false;
+            }
 
 			this.DbSet.Remove(gameGenreRelationToDelete);
 			await this.DbContext.SaveChangesAsync();

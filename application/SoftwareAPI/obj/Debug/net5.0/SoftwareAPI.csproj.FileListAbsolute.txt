@@ -72,3 +72,5 @@ C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\Humanizer.dll
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\bin\Debug\net5.0\SoftwareAPI.xml
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI\obj\Debug\net5.0\SoftwareAPI.xml

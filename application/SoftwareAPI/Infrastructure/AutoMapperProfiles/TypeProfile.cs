@@ -2,7 +2,6 @@
 {
     using AutoMapper;
     using SoftwareAPI.DTOs.Type;
-    using SoftwareAPI.DTOs.Utility;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -16,8 +15,6 @@
                 .ForMember(utdto => utdto.TypesCount, u => u.MapFrom(types => types.Count()));
             this.CreateMap<PostTypeDTO, Database.Models.Software.Type>();
             this.CreateMap<PutTypeDTO, Database.Models.Software.Type>();
-            //this.CreateMap<GetTypeDTO, GetUtilityDTO>()
-             //   .ForMember(gudto => gudto.TypeName, t => t.MapFrom(type => type.Name));
         }
     }
 }
