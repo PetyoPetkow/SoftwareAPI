@@ -41,8 +41,16 @@ namespace SoftwareAPI
             services.AddDbContext<SoftwareAPIDbContext>();
             services.AddScoped<IGameService, GameService>();
             services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<IUtilityService, UtilityService>();
+            services.AddScoped<ITypeService, TypeService>();
             services.AddScoped<IGameGenreMappingService, GameGenreMappingService>();
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddSwaggerGen(c =>
+                {
+     
+                     c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First()); //This line
+                });
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,7 +60,11 @@ namespace SoftwareAPI
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SoftwareAPI v1"));
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SoftwareAPI v1"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("./v1/swagger.json", "My API V1"); //originally "./swagger/v1/swagger.json"
+                });
             }
 
             app.UseHttpsRedirection();

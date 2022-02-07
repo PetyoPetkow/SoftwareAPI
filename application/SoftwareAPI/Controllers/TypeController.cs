@@ -5,7 +5,9 @@ using System;
 using System.Threading.Tasks;
 namespace SoftwareAPI.Controllers
 {
-    public class TypeController : ControllerBase
+	[ApiController]
+	[Route("api/[controller]")]
+	public class TypeController : ControllerBase
     {
 		public TypeController(ITypeService typeService)
 		{

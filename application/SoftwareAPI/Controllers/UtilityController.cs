@@ -6,6 +6,8 @@
 	using System;
 	using System.Threading.Tasks;
 
+	[ApiController]
+	[Route("api/[controller]")]
 	public class UtilityController : ControllerBase
     {
         public UtilityController(IUtilityService utilityService)

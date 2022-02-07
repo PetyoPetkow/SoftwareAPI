@@ -1479,7 +1479,8 @@
           "AutoMapper": "11.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.11",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
+          "SoftwareAPI.Database.Models": "1.0.0"
         },
         "runtime": {
           "SoftwareAPI.DTOs.dll": {}

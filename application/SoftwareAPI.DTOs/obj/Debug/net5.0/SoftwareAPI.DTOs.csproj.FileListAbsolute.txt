@@ -13,3 +13,6 @@ C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\obj\Debug\ne
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.DTOs.runtimeconfig.json
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.DTOs.runtimeconfig.dev.json
 C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\obj\Debug\net5.0\SoftwareAPI.DTOs.genruntimeconfig.cache
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.Database.Models.dll
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\bin\Debug\net5.0\SoftwareAPI.Database.Models.pdb
+C:\Users\user\source\repos\SoftwareAPI\application\SoftwareAPI.DTOs\obj\Debug\net5.0\SoftwareAPI.DTOs.csproj.CopyComplete

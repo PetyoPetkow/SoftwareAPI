@@ -16,6 +16,7 @@
             : base(dbContext, mapper)
         {
         }
+
         public async Task<T> GetAllAsync<T>()
         {
             IEnumerable<SoftwareAPI.Database.Models.Software.Type> types = await this.DbSet
@@ -24,6 +25,7 @@
             T result = this.Mapper.Map<T>(types);
             return result;
         }
+
         public async Task<T> GetByIdAsync<T>(Guid id)
         {
             SoftwareAPI.Database.Models.Software.Type type = await this.DbSet

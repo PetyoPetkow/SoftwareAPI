@@ -13,7 +13,6 @@
                 .HasOne<SoftwareAPI.Database.Models.Software.Type>(s => s.Type)
                 .WithMany(t => t.Utilities)
                 .HasForeignKey(u => u.TypeId);
-
         }
     }
 }
