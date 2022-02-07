@@ -11,7 +11,9 @@
         public GameProfile()
         {
             this.CreateMap<Game, GetGameDTO>()
-                .ForMember(ggdto => ggdto.Publisher, g => g.MapFrom(game => game.Publisher));
+                .ForMember(ggdto => ggdto.Publisher, g => g.MapFrom(game => game.Publisher))
+                .ForMember(ggdto => ggdto.Genres, g => g.MapFrom(genre => genre.Genres));
+            
 
             this.CreateMap<IEnumerable<Game>, GetAllGamesDTO>()
                 .ForMember(ggdto => ggdto.Games, g => g.MapFrom(games => games))

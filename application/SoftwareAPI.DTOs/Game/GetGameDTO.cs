@@ -1,6 +1,10 @@
 ﻿namespace SoftwareAPI.DTOs.Game
 {
     using System;
+    using System.Collections.Generic;
+
+    using SoftwareAPI.Database.Models.Software;
+    using SoftwareAPI.DTOs.Genre;
 
     public class GetGameDTO
     {
@@ -17,6 +21,8 @@
         public bool IsDeleted { get; set; }
 
         public DateTime? DeletedOn { get; set; }
+        
+        public GetAllGenresDTO Genres { get; set; }
 
         public int GenresCount { get; set; }
     }

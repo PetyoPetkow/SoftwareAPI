@@ -63,6 +63,18 @@
 			return this.NoContent();
 		}
 
+		[HttpPatch]
+		[Route("{id}")]
+		public async Task<IActionResult> Patch(Guid id, PatchGameDTO model)
+		{
+			bool resultFromPartialUpdate = await this.GameService.PartialUpdateAsync(id, model);
+			if (resultFromPartialUpdate == false)
+			{
+				return this.BadRequest();
+			}
+			return this.Ok();
+		}
+
 		[HttpDelete]
 		[Route("{id}")]
 		public async Task<IActionResult> Delete(Guid id)

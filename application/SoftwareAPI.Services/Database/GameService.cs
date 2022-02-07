@@ -14,10 +14,18 @@
 
     public class GameService : BaseService<Game>, IGameService
     {
-        public GameService(SoftwareAPIDbContext dbContext, IMapper mapper)
+        private readonly IGenreService genreService;
+        private readonly IGameGenreMappingService gameGenreMappingService;
+
+        public GameService(SoftwareAPIDbContext dbContext,
+            IMapper mapper,
+            IGenreService genreService, 
+            IGameGenreMappingService gameGenreMappingService
+            )
             : base(dbContext, mapper)
         {
-
+            this.genreService = genreService;
+            this.gameGenreMappingService = gameGenreMappingService;
         }
 
         public async Task<T> AddAsync<T>(PostGameDTO game)
@@ -57,6 +65,8 @@
                 .OrderBy(g => g.Name)
                 .ThenBy(g => g.Publisher)
                 .Include(g => g.Genres)
+                .ThenInclude(g=>g.Genre)
+                .Where(g => g.IsDeleted != false)
                 .ToListAsync();
 
             T mappedGames = this.Mapper.Map<T>(games);
@@ -82,6 +92,7 @@
             {
                 return false;
             }
+
             System.Type modelType = game.GetType();
             PropertyInfo[] properties = modelType.GetProperties();
             foreach (PropertyInfo propertyInfo in properties)
@@ -89,9 +100,17 @@
                 var propertyValue = propertyInfo.GetValue(game);
                 if (propertyValue != null)
                 {
-                    System.Type gameToUpdateType = gameToUpdate.GetType();
-                    PropertyInfo propertyToUpdate = gameToUpdateType.GetProperty(propertyInfo.Name);
-                    propertyToUpdate.SetValue(gameToUpdate, propertyValue);
+                    System.Type propertyType = propertyInfo.PropertyType;
+                    bool isPropertyTypeIEnumerable = propertyType.IsGenericType
+                        && propertyType.GetGenericTypeDefinition() == typeof(IEnumerable<>);
+
+                    if (isPropertyTypeIEnumerable)
+                    {
+                        IEnumerable<Guid> genresId = propertyInfo.GetValue(game) as IEnumerable<Guid>;
+                        await this.SaveGenresToGame(genresId, gameToUpdate);
+
+                        continue;
+                    }
                 }
             }
             gameToUpdate.UpdatedOn = DateTime.UtcNow;
@@ -115,6 +134,33 @@
             await this.DbContext.SaveChangesAsync();
 
             return true;
+        }
+        private async Task SaveGenresToGame(IEnumerable<Guid> genresId, Game game)
+        {
+            foreach (Guid genreId in genresId)
+            {
+                Genre genre = await genreService.GetByIdAsync<Genre>(genreId);
+                if (genre == null)
+                {
+                    continue;
+                }
+
+                bool isGenreAlreadyAssigned = game.Genres
+                    .Any(ggm => ggm.GameId == game.Id
+                            && ggm.GenreId == genre.Id);
+                if (isGenreAlreadyAssigned)
+                {
+                    continue;
+                }
+
+                GameGenreMapping gameGenreMapping = new GameGenreMapping
+                {
+                    GameId = game.Id,
+                    GenreId = genre.Id
+                };
+
+                await this.gameGenreMappingService.AddAsync<GameGenreMapping>(gameGenreMapping);
+            }
         }
     }
 

@@ -13,8 +13,8 @@
             this.CreateMap<IEnumerable<Database.Models.Software.Type>, GetAllTypesDTO>()
                 .ForMember(utdto => utdto.Types, u => u.MapFrom(types => types))
                 .ForMember(utdto => utdto.TypesCount, u => u.MapFrom(types => types.Count()));
-            this.CreateMap<Database.Models.Software.Type, PostTypeDTO>();
-            this.CreateMap<Database.Models.Software.Type, PutTypeDTO>();
+            this.CreateMap<PostTypeDTO, Database.Models.Software.Type>();
+            this.CreateMap<PutTypeDTO, Database.Models.Software.Type>();
         }
     }
 }
