@@ -1,6 +1,8 @@
-﻿using SoftwareAPI.Database.Models.Interfaces;
+﻿using SoftwareAPI.Common;
+using SoftwareAPI.Database.Models.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,10 +17,16 @@ namespace SoftwareAPI.Database.Models.Software
 
         }
 
+        [Required]
+        [MaxLength(ModelConstants.NAME_MAX_LENGTH)]
         public string Name { get; set; }
 
+        [Required]
+        [MaxLength(ModelConstants.PUBLISHER_MAX_LENGTH)]
         public string Publisher { get; set; }
 
+        [Required]
+        [MaxLength(ModelConstants.DESCRIPTION_MAX_LENGTH)]
         public string Description { get; set; }
 
         public int Price { get; set; }

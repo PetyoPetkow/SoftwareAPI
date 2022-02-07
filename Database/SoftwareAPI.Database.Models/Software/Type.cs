@@ -1,12 +1,11 @@
-﻿using SoftwareAPI.Database.Models.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftwareAPI.Database.Models.Software
+﻿namespace SoftwareAPI.Database.Models.Software
 {
+    using SoftwareAPI.Common;
+    using SoftwareAPI.Database.Models.Interfaces;
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+
     public class Type : BaseModel, IDeletable
     {
         public Type()
@@ -15,6 +14,8 @@ namespace SoftwareAPI.Database.Models.Software
 
         }
 
+        [Required]
+        [MaxLength(ModelConstants.NAME_MAX_LENGTH)]
         public string Name { get; set; }
 
         public bool IsDeleted { get; set; }
